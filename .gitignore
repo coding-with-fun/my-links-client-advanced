@@ -105,3 +105,6 @@ dist
 
 # Lock file
 yarn.lock
+
+# VS Code
+.vscode
