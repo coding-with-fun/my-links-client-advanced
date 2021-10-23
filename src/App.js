@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "./component/Navbar";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
+import IndexRoutes from "./utils/Routes/IndexRoutes";
 
 const App = () => {
     return (
@@ -12,7 +13,7 @@ const App = () => {
                     height: "100vh",
                 }}
             >
-                <h1>Hello World!!</h1>
+                <IndexRoutes />
             </div>
         </Router>
     );

@@ -1,10 +1,11 @@
 import { Paper } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import App from "./App";
+import { ThemeContext } from "./context/ThemeContext";
 
 const Base = () => {
-    const [theme, setTheme] = useState("dark");
+    const { theme } = useContext(ThemeContext);
 
     const themeToApply = createTheme({
         palette: {
