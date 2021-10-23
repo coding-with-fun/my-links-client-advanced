@@ -1,11 +1,17 @@
-import { Menu as MenuIcon } from "@mui/icons-material";
+import {
+    DarkMode as DarkModeIcon,
+    LightMode as LightModeIcon,
+    Menu as MenuIcon,
+} from "@mui/icons-material";
 import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import NavbarDrawer from "./Drawer";
+import { ThemeContext } from "../../context/ThemeContext";
 import { BoxContainer } from "../utils/BoxContainer";
+import NavbarDrawer from "./Drawer";
 
 export default function PrimarySearchAppBar() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
     const [state, setState] = useState(false);
 
     return (
@@ -48,11 +54,26 @@ export default function PrimarySearchAppBar() {
                                 MUI
                             </Typography>
                         </Link>
+
                         <BoxContainer
                             styles={{
                                 flexGrow: 1,
                             }}
                         />
+
+                        <IconButton
+                            size="large"
+                            edge="start"
+                            color="inherit"
+                            aria-label="open drawer"
+                            onClick={toggleTheme}
+                        >
+                            {theme === "dark" ? (
+                                <LightModeIcon />
+                            ) : theme === "light" ? (
+                                <DarkModeIcon />
+                            ) : null}
+                        </IconButton>
                     </Toolbar>
                 </AppBar>
             </BoxContainer>

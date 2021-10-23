@@ -3,10 +3,13 @@ import { createContext, useState } from "react";
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("dark");
+    const storedTheme = localStorage.getItem("my-links-theme");
+    const [theme, setTheme] = useState(storedTheme || "light");
 
     const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
+        const themeToSet = theme === "light" ? "dark" : "light";
+        setTheme(themeToSet);
+        localStorage.setItem("my-links-theme", themeToSet);
     };
 
     return (
