@@ -70,6 +70,7 @@ const EditableList = ({ type }) => {
                                                 sx={{
                                                     flex: 1,
                                                     py: 2,
+                                                    cursor: "pointer",
                                                 }}
                                             >
                                                 <Typography>{title}</Typography>
