@@ -1,0 +1,56 @@
+{
+    "featuredLinks": [
+        {
+            "_id": 0,
+            "url": "https://www.google.com",
+            "title": "Link 0"
+        },
+        {
+            "_id": 1,
+            "url": "https://www.google.com",
+            "title": "Link 1"
+        },
+        {
+            "_id": 2,
+            "url": "https://www.google.com",
+            "title": "Link 2"
+        },
+        {
+            "_id": 3,
+            "url": "https://www.google.com",
+            "title": "Link 3"
+        },
+        {
+            "_id": 4,
+            "url": "https://www.google.com",
+            "title": "Link 4"
+        }
+    ],
+    "allLinks": [
+        {
+            "_id": 0,
+            "url": "https://www.google.com",
+            "title": "Link 0"
+        },
+        {
+            "_id": 1,
+            "url": "https://www.google.com",
+            "title": "Link 1"
+        },
+        {
+            "_id": 2,
+            "url": "https://www.google.com",
+            "title": "Link 2"
+        },
+        {
+            "_id": 3,
+            "url": "https://www.google.com",
+            "title": "Link 3"
+        },
+        {
+            "_id": 4,
+            "url": "https://www.google.com",
+            "title": "Link 4"
+        }
+    ]
+}

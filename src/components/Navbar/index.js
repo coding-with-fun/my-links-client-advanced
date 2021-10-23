@@ -45,12 +45,7 @@ export default function PrimarySearchAppBar() {
                                 textDecoration: "none",
                             }}
                         >
-                            <Typography
-                                variant="h6"
-                                noWrap
-                                paddingTop={0.8}
-                                component="div"
-                            >
+                            <Typography variant="h6" noWrap component="div">
                                 MUI
                             </Typography>
                         </Link>
@@ -65,7 +60,7 @@ export default function PrimarySearchAppBar() {
                             size="large"
                             edge="start"
                             color="inherit"
-                            aria-label="open drawer"
+                            aria-label="theme-toggler"
                             onClick={toggleTheme}
                         >
                             {theme === "dark" ? (

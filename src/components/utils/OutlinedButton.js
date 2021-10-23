@@ -5,7 +5,6 @@ export const OutlinedButton = ({ children, styles, ...rest }) => {
         <Button
             {...rest}
             sx={{
-                paddingTop: "10px",
                 ...styles,
             }}
             variant="outlined"

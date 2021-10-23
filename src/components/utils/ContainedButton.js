@@ -5,7 +5,6 @@ export const ContainedButton = ({ children, styles, ...rest }) => {
         <Button
             {...rest}
             sx={{
-                paddingTop: "10px",
                 ...styles,
             }}
             variant="contained"

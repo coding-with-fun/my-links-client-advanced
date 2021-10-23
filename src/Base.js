@@ -11,11 +11,18 @@ const Base = () => {
         palette: {
             mode: theme,
         },
+        typography: {
+            fontFamily: `"Lato", "sans-serif"`,
+        },
     });
 
     return (
         <ThemeProvider theme={themeToApply}>
-            <Paper square elevation={0} className="app_outer__container">
+            <Paper
+                square
+                elevation={0}
+                className={`app_outer__container ${theme}`}
+            >
                 <App />
             </Paper>
         </ThemeProvider>

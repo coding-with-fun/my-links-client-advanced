@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Home from "../../screens/Common/Home";
-import UserLinks from "../../screens/Common/UserLinks";
+import UserProfile from "../../screens/Common/UserProfile";
 
 import MyLinks from "../../screens/Private/MyLinks";
 import Profile from "../../screens/Private/Profile";
@@ -32,7 +32,7 @@ const IndexRoutes = () => {
             <PrivateRouter path="/:username/edit" component={MyLinks} />
 
             <Route exact path="/" component={Home} />
-            <Route path="/:username" component={UserLinks} />
+            <Route path="/:username" component={UserProfile} />
         </Switch>
     );
 };
